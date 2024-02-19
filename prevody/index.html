@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="number" placeholder="zadej cislo" id="prevod">
+    <select name="měna" id="měna">
+        <option  value="koruna česka">koruna česka</option>
+        <option value="euro" >euro</option>
+        <option value="dollar">dollar</option>
+      </select>
+    <select name="měna" id="měna2">
+        <option  value="koruna česka">koruna česka</option>
+        <option value="euro" >euro</option>
+        <option value="dollar">dollar</option>
+      </select>
+      <button type="submit" onclick="prevodnikMen()">prevest</button>
+      <h1 id="pop">-</h1>
+
+      <input type="number" placeholder="zadejte pravidelny mesicni  vlklad" id="vklad">
+    <select name="kalkulacka" id="čas">
+        <option  value="6 mesicu">6 mesicu</option>
+        <option value="rok" >rok</option>
+        <option value="2 roky">2 roky</option>
+        <option value="5 let">5 let</option>
+        <option value="10 let">10 let</option>
+      </select>
+      <button type="submit" onclick="vypocetInvestic()">prevest</button>
+      <h1 id="pup">-</h1>
+      <input type="number" placeholder="bez DPH" id="noDPH">
+      <input type="number" placeholder="s DPH" id="DPH">
+      <button type="submit" onclick="vypocetDPH()">prevest</button>
+      <h1 id="pap">-</h1>
+</body>
+</html>
